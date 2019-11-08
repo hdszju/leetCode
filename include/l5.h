@@ -16,7 +16,27 @@ namespace l5 {
     class Solution {
     public:
         string longestPalindrome(string s) {
+            int maxPlength = 1;
+            int startPos = 0;
+            for (int i = 1; i < s.size(); ++i) {
+                if (isPalindrome(s,startPos,i)){
+                    maxPlength = i - startPos +1;
+                } else{
 
+                }
+            }
+        }
+
+    private:
+        bool isPalindrome(string s,int start,int end){
+            bool res = true;
+            for (int i = start; i < (end-start)/2+1; i+=2) {
+                if(s[i]!=s[start-end-1-i]){
+                    res = false;
+                    break;
+                }
+            }
+            return res;
         }
     };
 
