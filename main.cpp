@@ -1,7 +1,6 @@
 #include <iostream>
-#include "include/l4.h"
-using namespace std;
+
 int main() {
-    l4::test();
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
