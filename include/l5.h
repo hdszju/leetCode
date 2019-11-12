@@ -18,20 +18,28 @@ namespace l5 {
         string longestPalindrome(string s) {
             int maxPlength = 1;
             int startPos = 0;
-            for (int i = 1; i < s.size(); ++i) {
-                if (isPalindrome(s,startPos,i)){
-                    maxPlength = i - startPos +1;
-                } else{
+            for (int j = 0; j < s.size(); ++j) {
+                for (int i = j+1; i < s.size(); ++i) {
+                    if (isPalindrome(s,j,i)){
+                        if (maxPlength < i - j +1){
+                            maxPlength = i - j +1;
+                            cout<< "maxPlength is " << maxPlength << " (i,j)"<< i<<","<<j<< endl;
+                        }
+                    } else{
+                        cout<< "is not" << endl;
 
+                    }
                 }
             }
+            return  s;
         }
 
     private:
         bool isPalindrome(string s,int start,int end){
             bool res = true;
-            for (int i = start; i < (end-start)/2+1; i+=2) {
-                if(s[i]!=s[start-end-1-i]){
+            for (int i = start; i < end/2; i++) {
+                cout << s[i] << " " <<i << " " << end-i << " " << s[end-i] << endl;
+                if(s[i]!=s[end-i]){
                     res = false;
                     break;
                 }
@@ -42,7 +50,8 @@ namespace l5 {
 
     void  test(){
         Solution s = Solution();
-        string str("adbdsgbsd");
+        string str("aba0k00a1");
+        s.longestPalindrome(str);
 
     }
 }
