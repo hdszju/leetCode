@@ -11,6 +11,7 @@
 #include <iostream>
 #include <string>
 #include <map>
+#include <vector>
 namespace l5 {
     using namespace std;
     class Solution {
@@ -23,23 +24,27 @@ namespace l5 {
                     if (isPalindrome(s,j,i)){
                         if (maxPlength < i - j +1){
                             maxPlength = i - j +1;
-                            cout<< "maxPlength is " << maxPlength << " (i,j)"<< i<<","<<j<< endl;
+                            startPos = j;
                         }
-                    } else{
-                        cout<< "is not" << endl;
-
                     }
                 }
             }
-            return  s;
+            return  s.substr(startPos,maxPlength);
         }
 
     private:
-        bool isPalindrome(string s,int start,int end){
+        string lcs(string& s){
+              vector<vector<int>> table(s.size(),vector<int>(s.size(),0));
+//            for (int i = 0; i < s.size(); ++i) {
+//                if (table[][])
+//            }
+        };
+        bool isPalindrome(string& s,int start,int end){
             bool res = true;
-            for (int i = start; i < end/2; i++) {
-                cout << s[i] << " " <<i << " " << end-i << " " << s[end-i] << endl;
-                if(s[i]!=s[end-i]){
+//            int width = end - start + 1;
+//            int middle = width/2;
+            for (int i = 0; i < (end - start + 1)/2; i++) {
+                if(s[start+i]!=s[end-i]){
                     res = false;
                     break;
                 }
@@ -50,8 +55,9 @@ namespace l5 {
 
     void  test(){
         Solution s = Solution();
-        string str("aba0k00a1");
-        s.longestPalindrome(str);
+//        string str("jrjnbctoqgzimtoklkxcknwmhiztomaofwwzjnhrijwkgmwwuazcowskjhitejnvtblqyepxispasrgvgzqlvrmvhxusiqqzzibcyhpnruhrgbzsmlsuacwptmzxuewnjzmwxbdzqyvsjzxiecsnkdibudtvthzlizralpaowsbakzconeuwwpsqynaxqmgngzpovauxsqgypinywwtmekzhhlzaeatbzryreuttgwfqmmpeywtvpssznkwhzuqewuqtfuflttjcxrhwexvtxjihunpywerkktbvlsyomkxuwrqqmbmzjbfytdddnkasmdyukawrzrnhdmaefzltddipcrhuchvdcoegamlfifzistnplqabtazunlelslicrkuuhosoyduhootlwsbtxautewkvnvlbtixkmxhngidxecehslqjpcdrtlqswmyghmwlttjecvbueswsixoxmymcepbmuwtzanmvujmalyghzkvtoxynyusbpzpolaplsgrunpfgdbbtvtkahqmmlbxzcfznvhxsiytlsxmmtqiudyjlnbkzvtbqdsknsrknsykqzucevgmmcoanilsyyklpbxqosoquolvytefhvozwtwcrmbnyijbammlzrgalrymyfpysbqpjwzirsfknnyseiujadovngogvptphuyzkrwgjqwdhtvgxnmxuheofplizpxijfytfabx");
+        string str("ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg");
+        cout << s.longestPalindrome(str) << endl;
 
     }
 }
