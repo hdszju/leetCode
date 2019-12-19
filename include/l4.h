@@ -17,15 +17,24 @@
 #ifndef LEETCODE_L4_H
 #define LEETCODE_L4_H
 
-// #define max(a,b) (((a) > (b)) ? (a) : (b))
-// #define min(a,b) (((a) < (b)) ? (a) : (b))
 
 
 #include <iostream>
 #include <vector>
 #include <limits.h>
 using namespace std;
+
+#define max(a,b) (((a) > (b)) ? (a) : (b))
+#define min(a,b) (((a) < (b)) ? (a) : (b))
+
+
 namespace l4{
+
+
+
+// #define max(a,b) (((a) > (b)) ? (a) : (b))
+// #define min(a,b) (((a) < (b)) ? (a) : (b))
+
 
     class Solution {
     public:
