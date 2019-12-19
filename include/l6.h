@@ -22,6 +22,7 @@ namespace l6{
     class Solution {
     public:
         string convert(string s, int numRows) {
+            if (s.size()==1) return s;            
 
             vector<string> rows(min(numRows,int(s.size())));
             int curRow = 0;
