@@ -17,18 +17,18 @@
 #ifndef LEETCODE_L4_H
 #define LEETCODE_L4_H
 
-
-
-#include <iostream>
-#include <vector>
-#include <limits.h>
-
 #define max(a,b) (((a) > (b)) ? (a) : (b))
 #define min(a,b) (((a) < (b)) ? (a) : (b))
 
 
-using namespace std;
 
+#include <limits.h>
+#include <iostream>
+#include <vector>
+
+
+
+using namespace std;
 
 namespace l4{
 
