@@ -24,16 +24,16 @@
 #include <limits.h>
 using namespace std;
 
-#define max(a,b) (((a) > (b)) ? (a) : (b))
-#define min(a,b) (((a) < (b)) ? (a) : (b))
+// #define max(a,b) (((a) > (b)) ? (a) : (b))
+// #define min(a,b) (((a) < (b)) ? (a) : (b))
 
 
 namespace l4{
 
 
 
-// #define max(a,b) (((a) > (b)) ? (a) : (b))
-// #define min(a,b) (((a) < (b)) ? (a) : (b))
+#define max(a,b) (((a) > (b)) ? (a) : (b))
+#define min(a,b) (((a) < (b)) ? (a) : (b))
 
 
     class Solution {
