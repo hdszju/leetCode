@@ -17,8 +17,8 @@
 #ifndef LEETCODE_L4_H
 #define LEETCODE_L4_H
 
-#define max(a,b) (((a) > (b)) ? (a) : (b))
-#define min(a,b) (((a) < (b)) ? (a) : (b))
+// #define max(a,b) (((a) > (b)) ? (a) : (b))
+// #define min(a,b) (((a) < (b)) ? (a) : (b))
 
 
 
