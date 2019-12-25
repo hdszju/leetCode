@@ -62,7 +62,10 @@ namespace l468{
                 if(v.empty() || v.size()>4) return false;
 
                 for(auto c:v){
-                    if (!(isdigit(c) || (c>='a' && c<='f') || (c>='A' && c<='F'))) return false;                    
+                    if (!(isdigit(c) || (c>='a' && c<='f') || (c>='A' && c<='F'))){
+                        cout << c << "不是符合条件的" << endl;
+                     return false;                    
+                    }
                 }
             }
             
