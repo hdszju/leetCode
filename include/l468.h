@@ -57,7 +57,7 @@ namespace l468{
             vector<string> vs;
             split(IP,vs,'.');
             if (vs.size()!=8) {                
-                cout << vs.size() << "不是符合条件的" << endl;
+                cout << vs.size() << " 大小不符合" << endl;
                 return false;
             }
 
@@ -66,7 +66,7 @@ namespace l468{
 
                 for(auto c:v){
                     if (!(isdigit(c) || (c>='a' && c<='f') || (c>='A' && c<='F'))){
-                        cout << c << "不是符合条件的" << endl;
+                        cout << c << " 不是符合条件的" << endl;
                      return false;                    
                     }
                 }
