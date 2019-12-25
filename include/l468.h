@@ -56,7 +56,10 @@ namespace l468{
         bool isValidIPv6(string IP) {
             vector<string> vs;
             split(IP,vs,'.');
-            if (vs.size()!=8) return false;
+            if (vs.size()!=8) {                
+                cout << vs.size() << "不是符合条件的" << endl;
+                return false;
+            }
 
             for (auto &v:vs){
                 if(v.empty() || v.size()>4) return false;
