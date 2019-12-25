@@ -55,7 +55,7 @@ namespace l468{
         
         bool isValidIPv6(string IP) {
             vector<string> vs;
-            split(IP,vs,'.');
+            split(IP,vs,':');
             if (vs.size()!=8) {                
                 cout << vs.size() << " 大小不符合" << endl;
                 return false;
