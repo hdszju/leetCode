@@ -37,9 +37,10 @@ namespace l7{
 
     void test(){
         Solution s = Solution();
-        cout << INT_MIN << "  " << INT_MAX << endl;
-        
-        cout << s.reverse(1534236469) << endl;
+        cout << INT_MIN << "  " << INT_MAX << endl;  //-2147483648  2147483647
+        // 1534236469
+        // 2147483647
+        cout << s.reverse(153423646) << endl;
 
     }
 
