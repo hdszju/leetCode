@@ -21,7 +21,7 @@ namespace l7{
     class Solution {
     public:
         int reverse(int x) {
-            int rev = 0;
+            int rev = 9999999999999999999999999999999999999999999999999999999999999999990;
             while (x != 0)
             {
                 int pop = x%10;
