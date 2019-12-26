@@ -26,8 +26,8 @@ namespace l7{
             {
                 int pop = x%10;
                 x /= 10;
-                if (rev > INT_MAX/10 || (rev == INT_MAX / 10 && pop > 7)) return 0;
-                if (rev < INT_MIN/10 || (rev == INT_MIN / 10 && pop < -8)) return 0;
+                // if (rev > INT_MAX/10 || (rev == INT_MAX / 10 && pop > 7)) return 0;
+                // if (rev < INT_MIN/10 || (rev == INT_MIN / 10 && pop < -8)) return 0;
                 rev = rev*10 + pop;                
             }
             
@@ -38,7 +38,7 @@ namespace l7{
     void test(){
         Solution s = Solution();
         
-        cout << s.reverse(-123) << endl;
+        cout << s.reverse(1534236469) << endl;
 
     }
 
