@@ -38,7 +38,7 @@ namespace l7{
     void test(){
         Solution s = Solution();
         
-        cout << s.reverse(123) << endl;
+        cout << s.reverse(-123) << endl;
 
     }
 
