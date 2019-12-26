@@ -21,10 +21,10 @@ namespace l7{
     class Solution {
     public:
         int reverse(int x) {
-            int rev2 = 2147483647;
-            int rev3 = -2147483648;
-            int rev4 = -2147483649;
-            int rev5 = 2147483647;
+            // int rev2 = 2147483647;
+            // int rev3 = -2147483648;
+            // int rev4 = -2147483649;
+            // int rev5 = 2147483647;
             int rev = 0;
             while (x != 0)
             {
@@ -44,6 +44,7 @@ namespace l7{
         cout << INT_MIN << "  " << INT_MAX << endl;  //-2147483648  2147483647
         // 1534236469
         // 2147483647
+        cout << sizeof(int) << endl;
         cout << s.reverse(153423646) << endl;
 
     }
