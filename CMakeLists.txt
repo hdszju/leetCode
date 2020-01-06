@@ -8,5 +8,6 @@ include/l4.h
 include/l5.h
 include/l6.h
 include/l7.h
+include/l8.h
 include/l468.h
 )
