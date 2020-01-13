@@ -12,7 +12,7 @@
 #ifndef LEETCODE_T_H
 #define LEETCODE_T_H
 
-#include <stdio.h>
+#include <iostream>
 using namespace std;
 namespace t
 {
@@ -23,9 +23,9 @@ void test()
     
     cin >> str;
     int maxLength = 0;
-    for(int i=0;i<sizeof(str);i++){
+    for(int i=str.size()-1;i>=0;i--){
         if(str[i]==' '){
-            maxLength = 0;
+            break;
         }else{
             maxLength++;                
         }
