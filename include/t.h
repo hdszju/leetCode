@@ -13,6 +13,7 @@
 #define LEETCODE_T_H
 
 #include <iostream>
+#include <string>
 using namespace std;
 namespace t
 {
