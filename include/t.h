@@ -32,7 +32,7 @@ void test()
         }
     }
     cout << maxLength << endl;
-    return 0;
+    return ;
 }
 
 } // namespace t
