@@ -24,12 +24,12 @@ using namespace std;
 
 int main(){
     string str,c;
-    //cin >> str >> c;
-    getline(cin,str);
-    getline(cin,c);
+    cin >> str >> c;
+    // getline(cin,str);
+    // getline(cin,c);
     int count = 0;
     int length = abs('A' - 'a');
-    cout << length << sizeof(str) << endl;
+    cout << length << ' :: '<< sizeof(str) << endl;
     for(int i=0; i<sizeof(str);i++){
         if(str[i]==c[0] || abs(str[i]-c[0])==length) count++;
     }
