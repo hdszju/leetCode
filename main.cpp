@@ -29,6 +29,7 @@ int main(){
     getline(cin,c);
     int count = 0;
     int length = abs('A' - 'a');
+    cout << length << sizeof(str) << endl;
     for(int i=0; i<sizeof(str);i++){
         if(str[i]==c[0] || abs(str[i]-c[0])==length) count++;
     }
