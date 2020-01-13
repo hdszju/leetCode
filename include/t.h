@@ -12,8 +12,7 @@
 #ifndef LEETCODE_T_H
 #define LEETCODE_T_H
 
-#include <iostream>
-#include <vector>
+#include <stdio.h>
 using namespace std;
 namespace t
 {
