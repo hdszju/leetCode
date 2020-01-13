@@ -23,6 +23,7 @@ void test()
     string str;
     
     cin >> str;
+    cout << str << endl;
     int maxLength = 0;
     for(int i=str.size()-1;i>=0;i--){
         if(str[i]==' '){
