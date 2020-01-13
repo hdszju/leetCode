@@ -26,6 +26,7 @@ void test()
     cout << str << endl;
     int maxLength = 0;
     for(int i=str.size()-1;i>=0;i--){
+      count << str[i] << endl;
         if(str[i]==' '){
             break;
         }else{
